@@ -1,0 +1,124 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <FrameLayout
+            android:id="@+id/FrameLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="56dp" >
+
+            <ImageView
+                android:id="@+id/MagicBall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ball" />
+
+            <ImageView
+                android:id="@+id/mic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/mic" />
+               <ImageView
+                android:id="@+id/tri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:src="@drawable/tri" />
+
+               <TextView
+                   android:id="@+id/answerTextView"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:textColor="#ffffff"
+                   android:visibility="gone"
+                   android:text="answer" />
+
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/guide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/FrameLayout1"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/guide_mod" />
+          <ImageView
+            android:id="@+id/shakeit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/FrameLayout1"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:src="@drawable/shakeit" />
+          
+             <ImageView
+            android:id="@+id/shareMod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/FrameLayout1"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:src="@drawable/share_mod" />
+
+             <EditText
+                 android:id="@+id/shareEditText"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentTop="true"
+                 android:layout_centerHorizontal="true"
+                 android:layout_marginTop="63dp"
+                 android:ems="10"
+                 android:singleLine="true"
+                 android:visibility="gone" >
+
+                 <requestFocus />
+             </EditText>
+
+             <ImageView
+                 android:id="@+id/twitterBtn"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignLeft="@+id/shareEditText"
+                 android:layout_below="@+id/shareEditText"
+                 android:layout_marginLeft="78dp"
+                 android:src="@drawable/icon_t"
+                 android:visibility="gone" />
+
+             <ImageView
+                 android:id="@+id/retryBtn"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignBottom="@+id/twitterBtn"
+                 android:layout_marginLeft="14dp"
+                 android:layout_toRightOf="@+id/twitterBtn"
+                 android:src="@drawable/button"
+                 android:visibility="gone" />
+
+             <ImageView
+                 android:id="@+id/facebookBtn"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignLeft="@+id/shareEditText"
+                 android:layout_below="@+id/shareEditText"
+                 android:layout_marginLeft="37dp"
+                 android:src="@drawable/icon_f"
+                 android:visibility="gone" />
+
+    </RelativeLayout>
+
+</FrameLayout>
